@@ -129,6 +129,7 @@ class WeatherApp(QWidget):
        temperature_k = data["main"]["temp"]
        #temp celsius
        temperature_c = temperature_k - 273.15
+       #temp fahrenheit
        temperature_f = (temperature_k * 9/5) - 459.67
        weather_id = data["weather"][0]["id"]
        weather_description = data["weather"][0]["description"]
